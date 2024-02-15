@@ -95,10 +95,11 @@
 			const hour = minute * 60;
 			const day = hour * 24;
 			
-			const textDay = Math.floor(counter / day);
-			const textHour = Math.floor((counter % day) / hour);
-			const textMinute = Math.floor((counter % hour) / minute);
-			const textSecond = Math.floor((counter % minute) / second);
+			const sign = Math.sign(counter) * 1;
+			const textDay = sign*Math.floor(Math.abs(counter / day));
+			const textHour = sign*Math.floor(Math.abs(counter % day) / hour);
+			const textMinute = sign*Math.floor(Math.abs(counter % hour) / minute);
+			const textSecond = sign*Math.floor(Math.abs(counter % minute) / second);
 			
 			document.querySelector(".day").innerText = textDay + ' Days';
 			document.querySelector(".hour").innerText = textHour + ' Hours';
