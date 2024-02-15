@@ -1,4 +1,7 @@
-# maintenance-page
-Simple Maintenance Webpage with configurable timer
+# HTML Maintenance page
 
-Features an animated set of turning gears in a single html file
+Simple Maintenance Webpage with configurable timer.
+Features an animated set of turning gears all in a single html file
+
+### Preview
+![Preview](screenshot.png)
